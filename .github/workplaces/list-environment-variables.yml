@@ -19,6 +19,6 @@ jobs:
                   registry-url: https://registry.npmjs.org
                   always-auth: true
             - name: publish
-              run: npm 
+              run: npm whoami
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN2 }}
