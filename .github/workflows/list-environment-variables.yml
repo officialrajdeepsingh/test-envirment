@@ -14,5 +14,7 @@ jobs:
                 node-version: 16
             - uses: JS-DevTools/npm-publish@v1
               with:
-                token: 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
+                token: $NPM_TOKEN
+              env:
+                 NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
             - run: npm whoami
