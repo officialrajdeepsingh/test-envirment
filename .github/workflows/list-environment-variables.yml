@@ -1,5 +1,4 @@
 name: release
-
 on: 
     push:
          branches:
@@ -15,5 +14,5 @@ jobs:
                 node-version: 16
             - uses: JS-DevTools/npm-publish@v1
               with:
-                token: ${{ secrets.NPM_TOKEN }}
+                token: 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
             - run: npm whoami
